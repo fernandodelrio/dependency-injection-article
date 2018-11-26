@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contact View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ContactViewController" customModule="ContactApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rhr-UX-pKd">
+                                <rect key="frame" x="30" y="64" width="354" height="473"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bBi-Xe-gZC">
+                                        <rect key="frame" x="77" y="0.0" width="200" height="200"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="photoImage"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="Lg0-1r-32v"/>
+                                            <constraint firstAttribute="width" constant="200" id="y0F-Y5-snf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5g-ww-nXj">
+                                        <rect key="frame" x="0.0" y="220" width="354" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="nameLabel"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yne-JR-1Uo">
+                                        <rect key="frame" x="0.0" y="270" width="354" height="203"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="descriptionLabel"/>
+                                        <string key="text">Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description </string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="n5g-ww-nXj" firstAttribute="leading" secondItem="rhr-UX-pKd" secondAttribute="leading" id="FUa-CI-T3N"/>
+                                    <constraint firstItem="bBi-Xe-gZC" firstAttribute="centerX" secondItem="rhr-UX-pKd" secondAttribute="centerX" id="XZv-o4-6FF"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yne-JR-1Uo" secondAttribute="trailing" id="lsB-tv-9Pc"/>
+                                    <constraint firstAttribute="trailing" secondItem="n5g-ww-nXj" secondAttribute="trailing" id="sxd-89-s0I"/>
+                                    <constraint firstItem="Yne-JR-1Uo" firstAttribute="leading" secondItem="rhr-UX-pKd" secondAttribute="leading" id="xTr-b4-EGq"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rhr-UX-pKd" secondAttribute="trailing" constant="30" id="Bgq-QB-xUC"/>
+                            <constraint firstItem="rhr-UX-pKd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="GWO-bw-gTx"/>
+                            <constraint firstItem="rhr-UX-pKd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="N3g-x7-nI2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rhr-UX-pKd" secondAttribute="bottom" constant="20" id="ZvW-qG-JTc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="Yne-JR-1Uo" id="BDl-ms-AVd"/>
+                        <outlet property="nameLabel" destination="n5g-ww-nXj" id="WSI-VW-SVo"/>
+                        <outlet property="photoImageView" destination="bBi-Xe-gZC" id="f0O-6v-4JO"/>
+                        <outlet property="stackView" destination="rhr-UX-pKd" id="QDi-vp-BCi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>

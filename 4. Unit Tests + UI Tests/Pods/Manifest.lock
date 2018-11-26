@@ -1,0 +1,33 @@
+PODS:
+  - iOSSnapshotTestCase (4.0.0):
+    - iOSSnapshotTestCase/SwiftSupport (= 4.0.0)
+  - iOSSnapshotTestCase/Core (4.0.0)
+  - iOSSnapshotTestCase/SwiftSupport (4.0.0):
+    - iOSSnapshotTestCase/Core
+  - RxCocoa (4.3.1):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.3.1)
+  - Swinject (2.5.0)
+
+DEPENDENCIES:
+  - iOSSnapshotTestCase
+  - RxCocoa
+  - RxSwift
+  - Swinject
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - iOSSnapshotTestCase
+    - RxCocoa
+    - RxSwift
+    - Swinject
+
+SPEC CHECKSUMS:
+  iOSSnapshotTestCase: 711379b19f69a22c131527df862352c877c2773c
+  RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
+  RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
+  Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
+
+PODFILE CHECKSUM: 257fb3e0998c3e1bb44058d3d83fa872cea00507
+
+COCOAPODS: 1.5.3
